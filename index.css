@@ -1,0 +1,161 @@
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: 1px solid var(--gold)
+    }
+    100% {
+        border: none;
+    }
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    --dark: #1D223B;
+    --light: #DBDBDB;
+    --grey: #8f949b;
+    --white: #ffffff;
+    --gold: #E1B137;
+}
+
+.content {
+    max-width: calc(100% - 2*140px);
+    margin: 0 auto;
+    padding: 100px 140px;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro_title {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.intro_subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+    width: 20ch;
+    overflow: hidden;
+    border-right: 2px solid var(--gold);
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 2s steps(20);
+    animation-fill-mode: forwards;
+}
+
+.intro_social {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.intro_link {
+    width: 30px;
+    height: 30px;
+}
+
+svg:hover {
+    fill: var(--gold);
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.intro_text {
+    max-width: 660px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.projects_title {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.project_desription {
+    margin-right: 50px;
+}
+
+.project_title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.project_skills {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.project_skill {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--dark);
+    border-radius: 5px;
+    padding: 3px 5px;
+    background-color: var(--gold);
+}
+
+.project_list {
+    list-style: circle;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.project_links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.project_link {
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--light);
+    text-decoration: none;
+}
+
+.project_link::before {
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+    background-image: url(./images/icon-github.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: bottom;
+}
+
+.project_video {
+    width: 50%;
+    border: none;
+}
