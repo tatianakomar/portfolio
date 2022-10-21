@@ -94,6 +94,8 @@ svg:hover {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
     margin-bottom: 80px;
+    padding: 30px;
+    border-radius: 50px;
 }
 
 .project_desription {
@@ -169,3 +171,6 @@ svg:hover {
     vertical-align: bottom;
 } */
 
+.project_video:hover {
+    transform: scale(1.5) translateX(-25%);
+}
